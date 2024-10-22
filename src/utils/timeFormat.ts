@@ -1,5 +1,4 @@
 export default function formatTime(timestamp: number | Date) {
-  console.log(typeof timestamp, timestamp);
   const date = typeof timestamp === "number" ? new Date(timestamp) : timestamp;
 
   let hours = date.getHours();

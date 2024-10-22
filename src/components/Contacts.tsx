@@ -37,6 +37,7 @@ export default function Contact({
           {Contact.slice(0, ContactToShow).map((album) => {
             return (
               <motion.div
+                key={album.name}
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0 }}

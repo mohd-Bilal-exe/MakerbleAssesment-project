@@ -120,7 +120,7 @@ export default function Navbar() {
         <h1>{Profile.name}</h1>
       </div>
       <div
-        className="relative flex items-center gap-4 bg-black/20 px-5 py-1.5 rounded-xl select-none cursor-pointer"
+        className="relative mx-auto flex items-center gap-4 bg-black/20 px-5 py-1.5 rounded-xl select-none cursor-pointer"
         onClick={() => setIsMoreDropDown(!isMoreDropDown)}
       >
         More
