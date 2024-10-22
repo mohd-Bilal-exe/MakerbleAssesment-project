@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar:horizontal {
+  display: none;
+}
+::-webkit-scrollbar-track {
+  background: rgba(16, 16, 16, 0);
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffffa0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #252422;
+}
+::-webkit-scrollbar-corner {
+  display: none; /* Hide the bottom scrollbar */
+}
+#mainContent > div > span:not(:first-child) {
+  @apply text-indigo-500 text-pretty;
+}
