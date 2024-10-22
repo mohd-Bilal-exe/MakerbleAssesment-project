@@ -22,7 +22,7 @@ export default function Projects({
       animate={{ opacity: 1 }}
       transition={{ delay: !sidebarExpanded ? 0.8 : 0.5 }}
       exit={{ opacity: 0, x: -100 }}
-      className="text-black w-full bg-black/5 p-4 pb-7 rounded-xl  flex flex-col gap-3 shadow-md shadow-black/20 -z-10"
+      className="text-black w-full bg-black/5 p-4 pb-7 rounded-xl  flex flex-col gap-3 shadow-md shadow-black/20 "
     >
       <div className="relative text-2xl  ">
         Projects

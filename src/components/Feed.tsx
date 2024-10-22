@@ -52,19 +52,16 @@ export default function Feed({
     <div
       className={`w-full ${
         sidebarExpanded ? "h-[1295px]" : "max-h-[990px]"
-      }   bg-black/5 rounded-xl p-4 shadow-md shadow-black/30 overflow-y-auto -z-10`}
+      }   bg-black/5 rounded-xl p-4 shadow-md shadow-black/30 overflow-y-auto `}
     >
-      <div
-        id="heading"
-        className="w-full relative flex justify-between px-2 -z-10"
-      >
+      <div id="heading" className="w-full relative flex justify-between px-2 ">
         <h1 className="text-2xl ">Stories</h1>
         <button>Filters</button>
         <GradientDivs classNames="absolute -bottom-2 h-[1px] mt-4 px-2" />
       </div>
       <div
         key={"New Post"}
-        className="relative bg-black/10 rounded-lg my-5 py-2 px-3 -z-10"
+        className="relative bg-black/10 rounded-lg my-5 py-2 px-3 "
       >
         <form onSubmit={handlePostSubmit}>
           <div id="PostComment" className="flex gap-1 p-1 w-full">
@@ -85,11 +82,11 @@ export default function Feed({
           </div>
         </form>
       </div>
-      <div id="cards" className="flex flex-col gap-2 -z-10">
+      <div id="cards" className="flex flex-col gap-2 ">
         {Posts.map((Post) => {
           const isExpanded = expandedPost === Post.id;
           return (
-            <div key={Post.id} className="bg-black/10 rounded-md -z-10">
+            <div key={Post.id} className="bg-black/10 rounded-md ">
               <div
                 id="pfpandstuff"
                 className="w-full p-4 flex gap-2 items-center justify-between text-sm"

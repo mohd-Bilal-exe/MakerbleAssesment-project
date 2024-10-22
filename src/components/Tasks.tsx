@@ -68,7 +68,7 @@ export default function Tasks() {
 
   return (
     <div
-      className={`text-black w-full   bg-black/5 p-4  rounded-xl  flex flex-col gap-3 shadow-md shadow-black/20 -z-10`}
+      className={`text-black w-full   bg-black/5 p-4  rounded-xl  flex flex-col gap-3 shadow-md shadow-black/20 `}
     >
       <div id="heading" className="w-full relative flex justify-between px-2 ">
         <h1 className="text-2xl -z-10">Tasks</h1>
